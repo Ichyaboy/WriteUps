@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../mystyle.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Ichyaboy - Writeups</title>
+  </head>
+  <body style="background-color: black;">
+    <div class="container-fluid  mt-1 " style="width:100%;height: 100%;">
+        <div class="container  pt-3">
+            <div>
+                <a href="../index.html"><img class="backicon" src="back.png" alt="go back" title="Ichyaboy's site"></a>
+            </div>
+            <center>
+           <div class="row " id="HeaderRow">
+              <div class="" id="description">
+                 <h1 class="myname">Passwd</h1>
+              </div>
+           </div>
+            </center>
+
+            <div class="row" id="passwdparag" >
+                This was the first task on the ctf I solved. It was a warm up task, a good start in the cryptography serie. I know this is easy but I wanted to make things a bit clear.              
+            </div>
+            
+            <div class="row">
+                <center>
+                <img id="passwdtask" class="img-fluid"  src="passwd.PNG" alt="passwd task">
+            </center>
+            </div>
+
+            <div class="row" id="passwdparag" >
+                The given file was containing this: <pre>
+
+root:x:0:0:root:/root:/usr/bin/zsh
+bin:x:1:1::/:/usr/bin/nologin
+daemon:x:2:2::/:/usr/bin/nologin
+mail:x:8:12::/var/spool/mail:/usr/bin/nologin
+ftp:x:14:11::/srv/ftp:/usr/bin/nologin
+http:x:33:33::/srv/http:/usr/bin/nologin
+nobody:x:65534:65534:Nobody:/:/usr/bin/nologin
+dbus:x:81:81:System Message Bus:/:/usr/bin/nologin
+systemd-journal-remote:x:988:988:systemd Journal Remote:/:/usr/bin/nologin
+systemd-network:x:987:987:systemd Network Management:/:/usr/bin/nologin
+systemd-oom:x:986:986:systemd Userspace OOM Killer:/:/usr/bin/nologin
+systemd-resolve:x:984:984:systemd Resolver:/:/usr/bin/nologin
+systemd-timesync:x:983:983:systemd Time Synchronization:/:/usr/bin/nologin
+systemd-coredump:x:982:982:systemd Core Dumper:/:/usr/bin/nologin
+uuidd:x:68:68::/:/usr/bin/nologin
+avahi:x:980:980:Avahi mDNS/DNS-SD daemon:/:/usr/bin/nologin
+named:x:40:40:BIND DNS Server:/:/usr/bin/nologin
+brltty:x:979:979:Braille Device Daemon:/var/lib/brltty:/usr/bin/nologin
+colord:x:978:978:Color management daemon:/var/lib/colord:/usr/bin/nologin
+cups:x:209:209:cups helper user:/:/usr/bin/nologin
+dhcpcd:x:977:977:dhcpcd privilege separation:/:/usr/bin/nologin
+dnsmasq:x:976:976:dnsmasq daemon:/:/usr/bin/nologin
+git:x:975:975:git daemon user:/:/usr/bin/git-shell
+mpd:x:45:45::/var/lib/mpd:/usr/bin/nologin
+nbd:x:974:974:Network Block Device:/var/empty:/usr/bin/nologin
+nm-openvpn:x:973:973:NetworkManager OpenVPN:/:/usr/bin/nologin
+nvidia-persistenced:x:143:143:NVIDIA Persistence Daemon:/:/usr/bin/nologin
+openvpn:x:972:972:OpenVPN:/:/usr/bin/nologin
+partimag:x:110:110:Partimage user:/:/usr/bin/nologin
+polkitd:x:102:102:PolicyKit daemon:/:/usr/bin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/usr/bin/nologin
+rtkit:x:133:133:RealtimeKit:/proc:/usr/bin/nologin
+sddm:x:971:971:Simple Desktop Display Manager:/var/lib/sddm:/usr/bin/nologin
+tss:x:970:970:tss user for tpm2:/:/usr/bin/nologin
+usbmux:x:140:140:usbmux user:/:/usr/bin/nologin
+junior:x:1000:1000:Root@ROOT:/home/junior:/bin/zsh
+knight:x:708697c63f7eb369319c6523380bdf7a:/home/junior:/bin/zsh
+</pre>
+               <div style="margin-top: 15px;"> I know that this is the output of "cat /etc/shadow" and this command shows all the information about user's passwords (Linux Systems) and I know that he is looking for knight's password so I need to search for a user named knight than his password, so as we can see here </div>
+<center>
+<img class="img-fluid" src="passwduser.png" alt="usera nd password" style="width: 513px ; height: 63px ; margin-top: 15px; margin-bottom: 15px ;">
+</center>        
+
+              <div style="margin-top: 10px;">I found the hash of the passwd so all i need is just find the real password with this hash so I went to <a href="https://crackstation.net/" style="text-decoration: none;" target="_blank">Crack Station </a> to crack this password's hash</div>
+             <img  class="img-fluid" src="crackstation.PNG" alt="crackstation" style="width: 100%; height: 277px; margin-top: 15px ;">   
+           <div style="margin-top: 15px;">I found the password which is exploit so the flag is</div> 
+           <div style="padding-left: 15px; margin-top: 15px; margin-bottom: 50px;"><mark>KCTF{exploit}</mark></div>
+            </div>
+
+            
+
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

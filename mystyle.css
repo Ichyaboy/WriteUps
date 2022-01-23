@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+::selection{
+    color:black;
+    background-color: rgb(126, 126, 230);
+}
+
+@font-face {
+
+    font-family: 'mrrobotregular';
+    src: url('mr_robot-webfont.woff2') format('woff2'),
+         url('mr_robot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hackedregular';
+    src: url('hacked-kerx-webfont.woff2') format('woff2'),
+         url('hacked-kerx-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color:black;
+    height: 100%;
+}
+
+#HeaderRow {
+  width: 40%;
+}
+#einpic {
+  width: 400px;
+  height: 200px;
+  margin-left: -150px;
+}
+#description{
+    margin-left: -35px;
+}
+a:active{
+    text-decoration: none;
+
+}
+a:hover{
+    color: red;
+}
+
+.myname {
+    margin-top: 25px;
+    font-family: 'hackedregular';
+    font-size: 40px;
+    color: white;
+
+}
+.aboutme{
+    margin-top: 15px;
+    font-family: 'hackedregular';
+    color: white;
+    font-size: 20px;
+}
+.aboutme > p{
+    color: green;
+    
+    font-size: 15px;
+}
+
+
+.aboutme > a{
+    color: gray;
+}
+.aboutme > a:hover{
+    color: green;
+}
+
+#RestOfBody{
+    margin-top: 40px;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    background-color: #2d332d;
+    height: 100%;
+    font-size: 25px;
+    
+}
+.parag1{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 15px;
+
+
+}
+
+
+
+#ctfs{
+    color: white;
+    font-family: 'hackedregular';
+
+    font-size: 25px;
+
+}
+#categories{
+    color: white;
+    font-family: 'hackedregular';
+}
+
+#taskstable{
+    font-family: 'hackedregular';
+    font-size: 25px;
+    background-color: whitesmoke;
+}
+
+.tablebody{
+    background-color: #b2b2b2;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tablebody > tr:hover{
+    background-color: white;
+    color: black;
+    
+}
+.headoftable{
+    font-size: 22px;
+
+}
+
+.passwdpage > a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.passwdpage > a:hover{
+    color: green;
+}
+.notfoundpage > a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+.notfoundpage > a:hover{
+    color: green;
+}
+
+.jumblepage > a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.jumblepage > a:hover{
+    color: green;
+
+}
+
+.thepairspage > a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.thepairspage > a:hover{
+    color: green;
+
+}
+.rsaonepage > a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.rsaonepage > a:hover{
+    color: green;
+
+}
+.alphabetpage > a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.alphabetpage > a:hover{
+    color: green;
+
+}
+.tonypage > a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+.tonypage > a:hover{
+    color: green;
+    
+
+}
+
+.passwddescrip{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+
+.backicon{
+    width: 20px;
+    height: 16px;
+}
+
+#passwdparag{
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 40px;
+    padding: 14px;
+    color: white;
+    font-weight: bold;
+    background-color: #2d332d;
+    height: 100%;
+    font-size: 20px;
+
+}
+
+#passwdtask{
+    width: 303px;
+    height: 404px ;
+    margin-top: 25px;
+    margin-left: -50px;
+}

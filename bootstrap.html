@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="mystyle.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
+ 
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="books.jpg" alt="books logo" style="width: 40px;" class="rounded-pill">
+        </a>
+      <a class="navbar-brand" href="javascript:void(0)">E-library</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section3">About us</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-light" type="button">Search</button>
+        </form>
+        
+      </div>
+    </div>
+  </nav>  
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>First Bootstrap Page <span class="badge rounded-pill bg-secondary">New</span> </h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+  
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Kafon</h3>
+      <p>jaw </p>
+      <p>hahahhahah</p>
+    </div>
+    <div class="col-sm-3">
+      <h3>Rouissi</h3>
+      <p>jaw</p>
+      <p>hahhahahaha</p>
+    </div>
+    <div class="col-sm-3">
+      <h3>Dahmani</h3>        
+      <p>jaw</p>
+      <p>hahhahahaha</p>
+    </div>
+    <div class="col-sm-3">
+      <h3>Dali</h3>        
+      <p>jaw</p>
+      <p>hahhahahaha</p>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mt-3">
+    <h1>Responsive Columns</h1>
+    <p>Resize the browser window to see the effect.</p>
+    <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+    <div class="row">
+      <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+      <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+      <div class="col-sm-3 p-3 bg-primary text-white">.col</div>
+      <div class="col-sm-3 p-3 bg-dark text-white">.col</div>
+    </div>
+  </div>
+  <br>
+<blockquote class="blockquote">
+    <p>
+        Life is good!
+    </p>
+
+    <footer class="blockquote-footer">From kafon's memories</footer>
+</blockquote>
+
+<div class="container">
+    <h1>Description Lists</h1>    
+    <p>The dl element indicates a description list:</p>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>     
+  </div>
+
+  <div class="container mt-3">
+    <h1>Code Snippets</h1>
+    <p>Inline snippets of code should be embedded in the code element:</p>
+    <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+  </div>
+  <div class="container mt-3">
+    <h1>Keyboard Inputs</h1>
+    <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+    <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+  </div>
+<div class="container">
+    <p>For multiple lines of code, use the pre element:</p>
+    <pre>
+    Text in a pre element
+    is displayed in a fixed-width
+    font, and it preserves
+    both      spaces and
+    line breaks.
+</pre>
+</div>
+</div>
+<div class="container-fluid">
+    <table class="table table-striped table-hover table-bordered ">
+        <thead class="table-dark">
+            <tr> 
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-warning">
+                <td>Ahmed</td>
+                <td>Elkefi</td>
+                <td>Midlaner</td>
+            </tr>
+            <tr class="table-danger">
+                <td>Amin</td>
+                <td>Rouissi</td>
+                <td>Adc</td>
+            </tr>
+            <tr class="table-primary">
+                <td>Dahmani</td>
+                <td>Toumi</td>
+                <td>Support</td>
+            </tr>
+            <tr class="table-primary">
+              <td>Dali</td>
+              <td>kaabi</td>
+              <td>thief</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container mt-5">
+    <img src="Encryption and cryptography.jpg" class="rounded-circle mx-auto d-block img-fluid" alt="enc" width="304" height="236">
+    
+</div>
+<div class="container mt-3">
+    <h2>Alerts</h2>
+    <p>Alerts are created with the .alert class, followed by a contextual color classes:</p>
+    <div class="alert alert-success fade show">
+      <strong>Success!</strong> This alert box could indicate a successful or positive action.
+    </div>
+    <div class="alert alert-info fade show">
+      <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+    </div>
+    <div class="alert alert-warning fade show">
+      <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+    </div>
+    <div class="alert alert-danger alert-dismissible fade show">
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+    </div>
+    <div class="alert alert-primary">
+      <strong>Primary!</strong> Indicates an important action.
+    </div>
+    <div class="alert alert-secondary ">
+      <strong>Secondary!</strong> Indicates a slightly less important action.
+    </div>
+    <div class="alert alert-dark">
+      <strong>Dark!</strong> Dark grey alert.
+    </div>
+    <div class="alert alert-light">
+      <strong>Light!</strong> Light grey alert.
+    </div>
+  </div>
+
+  <div class="container">
+    <button type="button" class="btn">Basic</button>
+    <button type="button" class="btn btn-danger">danger</button>
+    <div class="d-grid gap-2">
+      <button type="button" class="btn btn-primary disabled">Primary</button>
+      <button type="button" class="btn btn-danger">danger</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+    </div>
+    <button type="button" class="btn btn-danger">
+      <span class="spinner-border spinner-border-sm"></span> danger</button>
+    <button type="button" class="btn btn-success">success</button>
+    <a href="index.html" class="btn btn-light btn-outline-dark btn-lg">Go to index</a>
+    <a href="index.html" class="btn btn-light btn-outline-dark">Go to index</a>
+    <a href="index.html" class="btn btn-light btn-outline-dark btn-sm">Go to index</a>
+  </div>
+  <div class="container-sm-3 btn-group btn-group-lg" >
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div> 
+  <div class="container-sm-3 btn-group btn-group-lg">
+    <button type="button" class="btn btn-primary">GTA:V</button>
+    <button type="button" class="btn btn-primary">CS:GO</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">LOL <span class="badge rounded-pill bg-dark">5</span></button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Top</a>
+        <a class="dropdown-item" href="#">Jng</a>
+        <a class="dropdown-item" href="#">Mid</a>
+        <a class="dropdown-item" href="#">Adc</a>
+        <a class="dropdown-item" href="#">Supp</a>
+      </div>
+    </div>
+  </div>
+  
+
+  <div class="container btn-group-vertical">
+    <button type="button" class="btn btn-primary">Apple</button>
+    <button type="button" class="btn btn-primary">Samsung</button>
+    <button type="button" class="btn btn-primary">Sony</button>
+  </div> 
+  
+  <div class="progress" style="height:20px">
+    <div class="progress-bar progress-bar-striped" style="width:40%;height:20px"></div>
+  </div> 
+  <div class="container">
+    <ul class="pagination">
+      <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul> 
+  </div>
+  <div class="conatiner ">
+    <ul class="list-group ">
+      <li class="col-sm-3 list-group-item active">Active item</li>
+      <li class="col-sm-3 list-group-item">Second item</li>
+      <li class="col-sm-3 list-group-item">Third item</li>
+    </ul> 
+  </div>
+  <div class="list-group list-group-flush">
+    <a href="#" class="list-group-item list-group-item-action disabled">First item</a>
+    <a href="#" class="list-group-item list-group-item-action">Second item</a>
+    <a href="#" class="list-group-item list-group-item-action">Third item</a>
+  </div>
+</div>
+<div class="container">
+  <ol class="list-group list-group-numbered">
+    <li class="list-group-item">First item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+  </ol> 
+</div>
+<div class="container">
+  <ul class="list-group list-group-horizontal">
+    <li class="list-group-item">First item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+    <li class="list-group-item">Fourth item</li>
+  </ul> 
+</div>
+
+<div class="container">
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Inbox
+      <span class="badge bg-primary rounded-pill">12</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Ads
+      <span class="badge bg-primary rounded-pill">50</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Junk
+      <span class="badge bg-primary rounded-pill">99</span>
+    </li>
+  </ul> 
+</div>
+
+<div class="container">
+  <div class="card">
+    <div class="card-header bg-black text-white">Header</div>
+    <div class="card-body bg-light text-dark">Body</div>
+    <div class="card-footer bg-dark text-white">Footer</div>
+  </div>
+</div>
+
+
+
+
+<div class="container mt-3">
+  <h2>Dropdowns</h2>
+  <p>The .dropdown-divider class is used to separate links inside the dropdown menu with a thin horizontal line:</p>
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Link 1</a></li>
+      <li><a class="dropdown-item" href="#">Link 2</a></li>
+      <li><a class="dropdown-item" href="#">Link 3</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Another link</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container mt-3">
+  <h2>Dropdowns</h2>
+  <p>The .dropdown-header class is used to add headers inside the dropdown menu:</p>
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+      Dropdown button
+    </button>
+    <ul class="dropdown-menu">
+      <li><h5 class="dropdown-header">Dropdown header 1</h5></li>
+      <li><a class="dropdown-item" href="#">Link 1</a></li>
+      <li><a class="dropdown-item" href="#">Link 2</a></li>
+      <li><a class="dropdown-item" href="#">Link 3</a></li>
+      <li><h5 class="dropdown-header">Dropdown header 2</h5></li>
+      <li><a class="dropdown-item" href="#">Another link</a></li>
+    </ul>
+  </div>
+</div>
+
+<div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+        Jouni in top lane 
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse show mx-auto" data-bs-parent="#accordion">
+      <div class="card-body ">
+        He is good with fiora
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Rouissi in bot lane
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse mx-auto" data-bs-parent="#accordion">
+      <div class="card-body">
+        He is good with Lucian
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+        Kafon in mid lane
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse mx-auto" data-bs-parent="#accordion">
+      <div class="card-body">
+        He is good with katarina
+      </div>
+    </div>
+  </div>
+
+</div> 
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+    </li>
+  </ul>
+</div>
+<div class="tab-content">
+  <div class="tab-pane container active mt-2" id="home">You motherfucker bitch</div>
+  <div class="tab-pane container fade mt-2" id="menu1">Nice to meet you</div>
+  <div class="tab-pane container fade mt-2" id="menu2">Yeah good for you</div>
+</div>
+
+<div class="container mt-4">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="pill" href="#m1">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#m2">Menu 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="pill" href="#m3">Menu 2</a>
+    </li>
+  </ul>
+</div>
+<div class="tab-content">
+  <div class="tab-pane container active" id="m1">You motherfucker bitch</div>
+  <div class="tab-pane container fade" id="m2">Nice to meet you</div>
+  <div class="tab-pane container fade" id="m3">Yeah good for you</div>
+</div>
+
+<div class="container ">
+<div class="container-fluid ms-0" style="width: 400px; height: 400px;">
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+  
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="heimerdinger.jpg" alt="heimerdinger" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="darius.jpg" alt="darius" class="d-block" style="width:100%">
+      <div class="carousel-caption">
+        <h3 id="dar">Yaamelek el regle</h3>
+        <p id="dar">Hay el ghost ijri ye neyek</p>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="braum.jpg" alt="braum" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<div class="container row-cols-auto">
+  <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#myModal" title="hahah">
+  Click Me
+</button>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Look at my title</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Yaatek aasba
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container mt-5">
+  <h2>First Book</h2>
+  <p>that's the first try</p>
+  <div class="card" style="width: 200px; height: 150px;">
+    <img class="card-img-top" src="kevinmetnik.jpg" alt="kevin metnik The art of Deception" style="width: 100%;">
+    <div class="card-body">
+      <h4 class="card-title">The art of deception</h4>
+      <button type="button" class="btn btn-primary" data-bs-toggle="popover" data-bs-placement="right" data-bs-trigger="hover" title="About book" data-bs-content="The Art of Deception is a book by Kevin Mitnick that covers the art of social engineering. Part of the book is composed of real stories and examples of how social engineering can be combined with hacking." data-bs-target="#info">About book</button>
+      <div id="info" class="collapse card-text">
+        The Art of Deception is a book by Kevin Mitnick that covers the art of social engineering. Part of the book is composed of real stories and examples of how social engineering can be combined with hacking.
+      </div>
+      <a href="Kevin_Mitnick_-_The_Art_of_Deception.pdf" class="btn btn-primary mt-1"  data-bs-toggle="tooltip" data-bs-placement="top" title="start reading">Read</a> 
+    </div>
+  </div>
+</div>
+<div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+  <h1>Section 1</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+<div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+  <h1>Section 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+
+<div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+  <h1>Section 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+ <!-- Offcanvas Sidebar -->
+ <div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Heading</h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Some text lorem ipsum.</p>
+    <p>Some text lorem ipsum.</p>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div>
+</div>
+<!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-start" id="d">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Heading</h1>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Some text lorem ipsum.</p>
+    <p>Some text lorem ipsum.</p>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div>
+</div>
+
+<!-- Button to open the offcanvas sidebar -->
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#d">
+  Open Offcanvas Sidebar
+</button> 
+
+<div class="d-inline-flex p-3 bg-secondary text-white">
+  <div class="p-2 bg-info">Flex item 1</div>
+  <div class="p-2 bg-warning">Flex item 2</div>
+  <div class="p-2 bg-primary">Flex item 3</div>
+</div>
+
+<div class="container mt-3">
+  <h2>Textarea</h2>
+  <p>Use the .form-control class to style textareas as well:</p>
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<form>
+  <div class="row mt-4">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Enter email" name="email">
+    </div>
+    <div class="col">
+      <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+    </div>
+  </div>
+</form> 
+
+<form class="mt-4">
+  <input type="text" class="form-control form-control-lg" placeholder="Large input">
+  <input type="text" class="form-control mt-3" placeholder="Normal input">
+  <input type="text" class="form-control form-control-sm mt-3" placeholder="Small input">
+  <input type="text" class="form-control-plaintext" placeholder="Plaintext input">
+  <input type="text" class="form-control" placeholder="Normal input"> 
+</form>
+
+<form>
+  <label for="myColor" class="form-label">Color picker</label>
+  <input type="color" class="form-control form-control-color" id="myColor" value="#000000" title="Choose a color">
+</form>
+
+<form action="/action_page.php">
+  <label for="sel1" class="form-label">Select list (select one):</label>
+  <select class="form-select" id="sel1" name="sellist1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+  <br>
+  
+  <label for="sel2" class="form-label">Mutiple select list (hold shift to select more than one):</label>
+  <select multiple class="form-select" id="sel2" name="sellist2">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
+
+<label for="browser" class="form-label">Choose your browser from the list:</label>
+<input class="form-control" list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist> 
+
+<form action="/action_page.php">
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked>
+    <label class="form-check-label" for="check1">Option 1</label>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">
+    <label class="form-check-label" for="check2">Option 2</label>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" disabled>
+    <label class="form-check-label">Option 3</label>
+  </div>
+  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
+
+
+<div class="form-check">
+  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
+  <label class="form-check-label" for="radio1"></label>
+</div>
+<div class="form-check">
+  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
+  <label class="form-check-label" for="radio2"></label>
+</div>
+<div class="form-check">
+  <input type="radio" class="form-check-input" disabled>Option 3
+  <label class="form-check-label"></label>
+</div> 
+
+<form action="/action_page.php">
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+    <label class="form-check-label" for="mySwitch">Dark Mode</label>
+  </div>
+  <button type="submit" class="btn btn-primary mt-3">Submit</button>
+</form>
+
+<label for="customRange" class="form-label">Custom range</label>
+<input type="range" class="form-range" id="customRange"> 
+
+<form class="mt-4">
+  <div class="input-group">
+    <span class="input-group-text">@</span>
+    <input type="text" class="form-control" placeholder="Username">
+  </div>
+
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Your Email">
+    <span class="input-group-text">@example.com</span>
+  </div>
+</form> 
+
+
+<div class="mt-5">
+  <div class="input-group mb-3">
+    <button class="btn btn-outline-primary" type="button">Basic Button</button>
+    <input type="text" class="form-control" placeholder="Some text">
+  </div>
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Search">
+    <button class="btn btn-success" type="submit">Go</button>
+  </div>
+  
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Something clever..">
+    <button class="btn btn-primary" type="button">OK</button>
+    <button class="btn btn-danger" type="button">Cancel</button>
+  </div> 
+</div>
+
+<div class="mt-5">
+  <div class="form-floating mb-3 mt-3">
+    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+    <label for="email">Email</label>
+  </div>
+  
+  <div class="form-floating mt-3 mb-3">
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+    <label for="pwd">Password</label>
+  </div> 
+</div>
+
+<div class="form-floating">
+  <select class="form-select" id="sel1" name="sellist">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+  <label for="sel1" class="form-label">Select list (select one):</label>
+</div> 
+
+<div class="mt-5">
+  <div class="container mt-3">
+    <h3>Form Validation</h3>
+    <p>Try to submit the form.</p>
+      
+    <form action="/action_page.php" class="was-validated">
+      <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Username:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="mb-3">
+        <label for="pwd" class="form-label">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
+      </div>
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+        <label class="form-check-label" for="myCheck">I agree on blabla.</label>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Check this checkbox to continue.</div>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
+</div>
+
+<div class="container-fluid mt-3">
+  <h1>Large Grid</h1>
+  <p>The following example will result in a 25%/75% split on small devices, a 50%/50% split on medium devices, and a 33%/66% split on large, xlarge and xxlarge devices. On extra small devices, it will automatically stack (100%).</p>
+  <p>Resize the browser window to see the effect.</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3 col-md-6 col-lg-4 bg-primary text-white">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </div>
+      <div class="col-sm-9 col-md-6 col-lg-8 bg-dark text-white">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-8 bg-warning p-4">
+      .col-8
+      <div class="row">
+        <div class="col-6 bg-light p-2">.col-6</div>
+        <div class="col-6 bg-secondary p-2">.col-6</div>
+      </div>
+    </div>
+    <div class="col-4 bg-success p-4">.col-4</div>
+  </div>
+</div>
+
+
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated"> 
+    style="width:70%">
+  </div>
+</div>
+
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  </script> 
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+    </script>
+</body>
+</html>
