@@ -213,7 +213,7 @@ a:hover{
     height: 16px;
 }
 
-#passwdparag{
+#parag{
     font-family: 'Roboto Mono', monospace;
     margin-top: 40px;
     padding: 14px;
@@ -226,6 +226,12 @@ a:hover{
 }
 
 #passwdtask{
+    width: 303px;
+    height: 404px ;
+    margin-top: 25px;
+    margin-left: -50px;
+}
+#404task{
     width: 303px;
     height: 404px ;
     margin-top: 25px;
