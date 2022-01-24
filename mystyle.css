@@ -237,3 +237,21 @@ a:hover{
     margin-top: 25px;
     margin-left: -50px;
 }
+#jumbletask{
+    width: 303px;
+    height: 404px ;
+    margin-top: 25px;
+    margin-left: -50px;
+}
+#encjumble{
+    width: 558px;
+    height: 400px ;
+    margin-top: 25px;
+    margin-left: -50px;
+}
+#decjumble{
+    width: 635px;
+    height: 400px ;
+    margin-top: 25px;
+    margin-left: -50px;
+}
